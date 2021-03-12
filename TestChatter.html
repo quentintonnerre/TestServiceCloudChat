@@ -18,6 +18,34 @@
     .embeddedServiceInvitationFooter > #rejectInvite { background-color: #FFFFFF; color: #005290; }
 </style>
 
+
+
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
+<!-- Start of Invitations -->
+<div class="embeddedServiceInvitation" id="snapins_invite" inert="true" aria-live="assertive" role="dialog" aria-atomic="true">
+    <div class="embeddedServiceInvitationHeader" aria-labelledby="snapins_titletext" aria-describedby="snapins_bodytext">
+        <img id="embeddedServiceAvatar"></img>
+        <span class="embeddedServiceTitleText" id="snapins_titletext">Need help?</span>
+        <button type="button" id="closeInvite" class="embeddedServiceCloseIcon" aria-label="Exit invitation">&times;</button>
+    </div>
+    <div class="embeddedServiceInvitationBody">
+        <p id="snapins_bodytext">How can we help you?</p>
+    </div>
+    <div class="embeddedServiceInvitationFooter" aria-describedby="snapins_bodytext">
+        <button type="button" class="embeddedServiceActionButton" id="rejectInvite">Close</button>
+        <button type="button" class="embeddedServiceActionButton" id="acceptInvite">Start Chat</button>
+    </div>
+</div>
+
 <script type='text/javascript'>
     (function() {
 	 
@@ -81,34 +109,6 @@
 		initESW('https://service.force.com');
 	}
 	</script>
-<body>
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
-	}
-</style>
-
-<!-- Start of Invitations -->
-<div class="embeddedServiceInvitation" id="snapins_invite" inert="true" aria-live="assertive" role="dialog" aria-atomic="true">
-    <div class="embeddedServiceInvitationHeader" aria-labelledby="snapins_titletext" aria-describedby="snapins_bodytext">
-        <img id="embeddedServiceAvatar"></img>
-        <span class="embeddedServiceTitleText" id="snapins_titletext">Need help?</span>
-        <button type="button" id="closeInvite" class="embeddedServiceCloseIcon" aria-label="Exit invitation">&times;</button>
-    </div>
-    <div class="embeddedServiceInvitationBody">
-        <p id="snapins_bodytext">How can we help you?</p>
-    </div>
-    <div class="embeddedServiceInvitationFooter" aria-describedby="snapins_bodytext">
-        <button type="button" class="embeddedServiceActionButton" id="rejectInvite">Close</button>
-        <button type="button" class="embeddedServiceActionButton" id="acceptInvite">Start Chat</button>
-    </div>
-</div>
-</body>
-
 
 
 </html>
