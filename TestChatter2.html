@@ -1,27 +1,34 @@
 <html>
-<head>
-<title>
-My title
-</title>
-</head>
-<body>
-Welcome to Live Agent
+    <body>
+		<!-- live chat button -->
+		<a id="liveagent_button_online_5737Z000000Gmb2" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5737Z000000Gmb2')">
+			Online Chat
+		</a>
+		<div id="liveagent_button_offline_5737Z000000Gmb2" style="display: none;">
+			Offline Chat
+		</div>
 
-<a id="liveagent_button_online_5737Z000000Gmb2" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5737Z000000Gmb2')"> Start live agent</a>
-<div id="liveagent_button_offline_5737Z000000Gmb2" style="display: none;">Bla bla bla</div>
-<script type="text/javascript">
-if (!window._laq) { window._laq = []; }
-window._laq.push(function(){liveagent.showWhenOnline('5737Z000000Gmb2', document.getElementById('liveagent_button_online_5737Z000000Gmb2'));
-liveagent.showWhenOffline('5737Z000000Gmb2', document.getElementById('liveagent_button_offline_5737Z000000Gmb2'));
-});
-</script>
+		<script type="text/javascript">
+			if (!window._laq) { window._laq = []; }
+			window._laq.push(
+				function(){
+					liveagent.showWhenOnline(
+						'5737Z000000Gmb2', 
+						document.getElementById('liveagent_button_online_5737Z000000Gmb2')
+					);
+					liveagent.showWhenOffline(
+						'5737Z000000Gmb2', 
+						document.getElementById('liveagent_button_offline_5737Z000000Gmb2')
+					);
+				}
+			);
+		</script>
 
-Lorem ipsum
-
-<script type='text/javascript' src='https://c.la1c1.salesforceliveagent.com/content/g/deployment.js'></script>
-<script type='text/javascript'>
-liveagent.init('https://d.la3-c1cs-cdg.salesforceliveagent.com/chat', '5727Z000000GmbM', '00D7Z000000AEJ0');
-</script>
-
-</body>
+		
+		<!-- live agent deployment -->
+		<script type='text/javascript' src='https://c.la1c1.salesforceliveagent.com/content/g/deployment.js'></script>
+		<script type='text/javascript'>
+			liveagent.init('https://d.la3-c1cs-cdg.salesforceliveagent.com/chat', '5727Z000000GmbM', '00D7Z000000AEJ0');
+		</script>
+	</body>
 </html>
