@@ -1,4 +1,5 @@
 <html>
+<body>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
@@ -59,7 +60,7 @@
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+		embedded_svc.settings.language = 'fr-FR'; //For example, enter 'en' or 'en-US'
 
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
@@ -91,7 +92,7 @@
 				buttonId: '5737Z000000Gmb7',
 				baseLiveAgentURL: 'https://d.la3-c1cs-cdg.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'Chat',
-				isOfflineSupportEnabled: false
+				isOfflineSupportEnabled: true
 			}
 		);
 	};
@@ -107,4 +108,5 @@
 		initESW('https://service.force.com');
 	}
 </script>
+</body>
 </html>
