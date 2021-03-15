@@ -41,6 +41,10 @@
 		  'label': 'CaseAssetId',
 		  'value': '02i5I000006sRLkQAM',
 		  'displayToAgent': true
+		}{
+		  'label': 'CaseOrigin',
+		  'value': 'Web',
+		  'displayToAgent': true
 		}];
 		embedded_svc.settings.extraPrechatInfo = [{
 		  'entityFieldMaps': [{
@@ -49,6 +53,13 @@
 		    'fieldName': 'AssetId',
 		    'isExactMatch': false,
 		    'label': 'CaseAssetId'
+		  },
+				     {
+		    'doCreate': true,
+		    'doFind": false,
+		    'fieldName': 'Origin',
+		    'isExactMatch': false,
+		    'label': 'CaseOrigin'
 		  }],
 		  'entityName': 'Case'
 		}];
