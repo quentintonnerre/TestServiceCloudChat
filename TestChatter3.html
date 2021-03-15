@@ -32,20 +32,30 @@
 		embedded_svc.settings.prepopulatedPrechatFields = {
 			FirstName: 'John',
 			LastName: 'Doe',
-			Email: 'john.doe@salesforce.com',
-			SuppliedEmail:'test@test.fr',
-			SuppliedName:'Test',
 			Subject: 'Hello'
 		};
 		embedded_svc.settings.extraPrechatFormDetails = [{
 		  'label': 'CaseAssetId',
 		  'value': '02i5I000006sRLkQAM',
-		  'displayToAgent': true
+		  'displayToAgent': false
 		},{
 		  'label': 'CaseOrigin',
 		  'value': 'Web',
-		  'displayToAgent': true
+		  'displayToAgent': false
+		},{
+		  'label': 'CaseEmail',
+		  'value': 'john.doe@salesforce.com',
+		  'displayToAgent': false
+		},{
+		  'label': 'CaseSuppliedEmail',
+		  'value': 'test@test.fr',
+		  'displayToAgent': false
+		},{
+		  'label': 'CaseSuppliedName',
+		  'value': 'Test',
+		  'displayToAgent': false
 		}];
+
 		embedded_svc.settings.extraPrechatInfo = [{
 		  'entityFieldMaps': [{
 		    'doCreate': true,
@@ -60,6 +70,27 @@
 		    'fieldName': 'Origin',
 		    'isExactMatch': false,
 		    'label': 'CaseOrigin'
+		  },
+				     {
+		    'doCreate': true,
+		    'doFind': false,
+		    'fieldName': 'Email',
+		    'isExactMatch': false,
+		    'label': 'CaseEmail'
+		  },
+				     {
+		    'doCreate': true,
+		    'doFind': false,
+		    'fieldName': 'SuppliedEmail',
+		    'isExactMatch': false,
+		    'label': 'CaseSuppliedEmail'
+		  },
+				     {
+		    'doCreate': true,
+		    'doFind': false,
+		    'fieldName': 'SuppliedName',
+		    'isExactMatch': false,
+		    'label': 'CaseSuppliedName'
 		  }],
 		  'entityName': 'Case'
 		}];
