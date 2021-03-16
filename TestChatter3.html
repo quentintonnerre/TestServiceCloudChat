@@ -35,8 +35,12 @@
 			Subject: 'Hello'
 		};
 		embedded_svc.settings.extraPrechatFormDetails = [{
-		  'label': 'CaseAssetId',
-		  'value': '02i5I000006sRLkQAM',
+		  'label': 'PrechatHIDCase',
+		  'value': '3485692',
+		  'displayToAgent': false
+		},{
+		  'label': 'PrechatHIDContact',
+		  'value': '3485692',
 		  'displayToAgent': false
 		},{
 		  'label': 'CaseOrigin',
@@ -60,9 +64,9 @@
 		  'entityFieldMaps': [{
 		    'doCreate': true,
 		    'doFind': false,
-		    'fieldName': 'AssetId',
+		    'fieldName': 'PrechatHIDCase',
 		    'isExactMatch': false,
-		    'label': 'CaseAssetId'
+		    'label': 'Prechat_HID__c'
 		  },
 				     {
 		    'doCreate': true,
@@ -93,6 +97,15 @@
 		    'label': 'CaseSuppliedName'
 		  }],
 		  'entityName': 'Case'
+		},{
+		  'entityFieldMaps': [{
+		    'doCreate': true,
+		    'doFind': false,
+		    'fieldName': 'PrechatHIDContact',
+		    'isExactMatch': false,
+		    'label': 'Prechat_HID__c'
+		  }],
+		  'entityName': 'Contact'
 		}];
 		
 		
