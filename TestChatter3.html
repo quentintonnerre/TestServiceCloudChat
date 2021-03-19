@@ -137,6 +137,13 @@
 				isOfflineSupportEnabled: false
 			}
 		);
+		embedded_svc.liveAgentAPI.startChat({
+			directToAgentRouting: {
+			buttonId: '5737Z000000Gmb7',
+			// userId: “”,
+			fallback: true
+		}
+		});
 	};
 
 	if (!window.embedded_svc) {
