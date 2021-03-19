@@ -137,7 +137,7 @@
 				isOfflineSupportEnabled: false
 			}
 		);
-		(document.getElementsByClassName('uiButton helpButtonEnabled')[0]).click();
+		
 	};
 
 	if (!window.embedded_svc) {
@@ -150,6 +150,7 @@
 	} else {
 		initESW('https://service.force.com' );
 	}
+	document.getElementsByClassName('uiButton helpButtonEnabled')[0].click();
 </script>
 </body>
 </html>
