@@ -151,7 +151,9 @@
 		initESW('https://service.force.com' );
 	}
 	window.onload = function() {
-	  document.getElementsByClassName('uiButton helpButtonEnabled')[0].click();
+		console.log(document.getElementByClassName('.embeddedServiceHelpButton .helpButton .uiButton')[0];
+	    	console.log(document.getElementsByClassName('uiButton helpButtonEnabled')[0])
+	 	document.getElementsByClassName('uiButton helpButtonEnabled')[0].click();
 	};
 	
 </script>
