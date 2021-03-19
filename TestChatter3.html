@@ -137,14 +137,7 @@
 				isOfflineSupportEnabled: false
 			}
 		);
-		console.log('start chat 2');
-		embedded_svc.startChat({
-			directToAgentRouting: {
-			buttonId: '5737Z000000Gmb7',
-			// userId: “”,
-			fallback: true
-		}
-		});
+		document.getElementsByClassName('uiButton helpButtonEnabled')[0].click();
 	};
 
 	if (!window.embedded_svc) {
