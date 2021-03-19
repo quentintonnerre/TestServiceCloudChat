@@ -150,7 +150,10 @@
 	} else {
 		initESW('https://service.force.com' );
 	}
-	document.getElementsByClassName('uiButton helpButtonEnabled')[0].click();
+	window.onload = function() {
+	  document.getElementsByClassName('uiButton helpButtonEnabled')[0].click();
+	};
+	
 </script>
 </body>
 </html>
