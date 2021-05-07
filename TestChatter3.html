@@ -17,7 +17,7 @@
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
-		console.log('ok2');
+		console.log('ok3');
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'fr'; //For example, enter 'en' or 'en-US'
 
@@ -100,15 +100,15 @@
 		    'label': 'ContactPrechatHID'
 		  },{
 		     "doCreate":false,
-		     "doFind":false,
+		     "doFind":true,
 		     "fieldName":"LastName",
-		     "isExactMatch":false,
+		     "isExactMatch":true,
 		     "label":"Last Name"
 		   }, {
 		     "doCreate":false,
-		     "doFind":false,
+		     "doFind":true,
 		     "fieldName":"FirstName",
-		     "isExactMatch":false,
+		     "isExactMatch":true,
 		     "label":"First Name"
 		   }, {
 		     "doCreate":false,
