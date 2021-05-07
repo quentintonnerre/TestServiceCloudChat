@@ -17,7 +17,7 @@
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
-		console.log('ok11');
+		console.log('ok12');
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'fr'; //F or example, enter 'en' or 'en-US'
 
@@ -93,6 +93,15 @@
 		  'entityName': 'Case'
 		},{
 		  'entityFieldMaps': [{
+		     "doCreate":true,
+		     "doFind":true,
+		     "fieldName":"Email",
+		     "isExactMatch":true,
+		     "label":"Email"
+		   }],
+		  'entityName': 'Contact'
+		}];
+		/*{
 		    'doCreate': true,
 		    'doFind': false,
 		    'fieldName': 'PreChat_HID__c',
@@ -110,16 +119,7 @@
 		     "fieldName":"FirstName",
 		     "isExactMatch":true,
 		     "label":"First Name"
-		   }, {
-		     "doCreate":true,
-		     "doFind":true,
-		     "fieldName":"Email",
-		     "isExactMatch":true,
-		     "label":"Email"
-		   }],
-		  'entityName': 'Contact'
-		}];
-		
+		   }, */
 		
 		
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
