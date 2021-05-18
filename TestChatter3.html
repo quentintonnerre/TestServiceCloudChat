@@ -17,7 +17,7 @@
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
-		console.log('ok19');
+		console.log('ok20');
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'fr'; //F or example, enter 'en' or 'en-US'
 
@@ -81,7 +81,8 @@
 		    'isExactMatch': false,
 		    'label': 'Email'
 		  }],
-		  'entityName': 'Case'
+		  'entityName': 'Case',
+		  'saveToTranscript':' Case'	
 		},{
 		  'entityFieldMaps': [{
 		    'doCreate': true,
