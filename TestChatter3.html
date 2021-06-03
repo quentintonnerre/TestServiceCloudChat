@@ -17,7 +17,7 @@
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
-		console.log('ok24');
+		console.log('ok25');
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'fr'; //F or example, enter 'en' or 'en-US'
 
@@ -85,32 +85,13 @@
 		  'saveToTranscript': 'CaseId'		
 		},{
 		  'entityFieldMaps': [{
-		    'doCreate': true,
-		    'doFind': false,
-		    'fieldName': 'PreChat_HID__c',
-		    'isExactMatch': false,
-		    'label': 'ContactPrechatHID'
-		  },{
 		     "doCreate":true,
-		     "doFind":true,
-		     "fieldName":"LastName",
-		     "isExactMatch":false,
-		     "label":"Last Name"
-		   }, {
-		     "doCreate":true,
-		     "doFind":true,
-		     "fieldName":"FirstName",
-		     "isExactMatch":false,
-		     "label":"First Name"
-		   },{
-		     "doCreate":true,
-		     "doFind":true,
+		     "doFind":false,
 		     "fieldName":"Email",
 		     "isExactMatch":true,
 		     "label":"Email"
 		   }],
-		  'entityName': 'Contact',
-		  'saveToTranscript': ''		
+		  'entityName': 'Contact'		
 		}];
 
 		
