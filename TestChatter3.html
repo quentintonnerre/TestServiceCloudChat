@@ -17,7 +17,7 @@
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
-		console.log('ok25');
+		console.log('ok26');
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'fr'; //F or example, enter 'en' or 'en-US'
 
@@ -90,9 +90,22 @@
 		     "fieldName":"Email",
 		     "isExactMatch":true,
 		     "label":"Email"
-		   }],
+		   },
+	      	{ "doCreate":true,
+		     "doFind":false,
+		     "fieldName":"FirstName",
+		     "isExactMatch":true,
+		     "label":"FirstName"}],
 		  'entityName': 'Contact'		
-		}];
+		},
+	      	{ "doCreate":true,
+		     "doFind":false,
+		     "fieldName":"LastName",
+		     "isExactMatch":true,
+		     "label":"LastName"}],
+		  'entityName': 'Contact'		
+		}
+	 	];
 
 		
 		
