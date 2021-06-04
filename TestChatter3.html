@@ -17,7 +17,7 @@
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
-		console.log('ok32');
+		console.log('ok33');
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'fr'; //F or example, enter 'en' or 'en-US'
 
@@ -38,8 +38,7 @@
 			Subject: '',
 			Email: ''
 		};
-		console.log('Test get Email');
-		console.log(document.getElementById('Email'));
+		
 		embedded_svc.settings.extraPrechatFormDetails = [
 	   {
 		  'label': 'ContactPrechatHID',
@@ -80,10 +79,7 @@
 		    'fieldName': 'SuppliedEmail',
 		    'isExactMatch': false,
 		    'label': 'Email'
-		  }],
-		  'entityName': 'Case',
-		  'saveToTranscript': 'CaseId'		
-		},   {
+		  },{
 		    'doCreate': true,
 		    'doFind': false,
 		    'fieldName': 'SuppliedName',
@@ -92,6 +88,7 @@
 		  }],
 		  'entityName': 'Case',
 		  'saveToTranscript': 'CaseId'		
+			
 		},{
 		  'entityFieldMaps': [{
 		     "doCreate":true,
