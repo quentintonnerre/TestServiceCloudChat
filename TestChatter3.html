@@ -2,10 +2,10 @@
 <body>
 	
 
-	<style type='text/css'>
+	<style type="text/css">
 		.embeddedServiceHelpButton .helpButton .uiButton {
 			background-color: #005290;
-			font-family: 'Arial', sans-serif;
+			font-family: "Arial", sans-serif;
 		}
 		.embeddedServiceHelpButton .helpButton .uiButton:focus {
 			outline: 1px solid #005290;
@@ -14,18 +14,18 @@
 		
 	</style>
 
-<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-<script type='text/javascript'>
+<script type="text/javascript" src="https://service.force.com/embeddedservice/5.0/esw.min.js"></script>
+<script type="text/javascript">
 	var initESW = function(gslbBaseURL) {
-		console.log('ok34');
+		console.log("ok35");
 		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = 'fr'; //F or example, enter 'en' or 'en-US'
+		embedded_svc.settings.language = "fr"; //F or example, enter "en" or "en-US"
 
-		embedded_svc.settings.defaultMinimizedText = 'Besoin d\'aide ?'; //(Defaults to Chat fwith an Expert)
-		embedded_svc.settings.disabledMinimizedText = 'Aucun agent en ligne.'; //(Defaults to Agent Offline)
+		embedded_svc.settings.defaultMinimizedText = "Besoin d\"aide ?"; //(Defaults to Chat fwith an Expert)
+		embedded_svc.settings.disabledMinimizedText = "Aucun agent en ligne."; //(Defaults to Agent Offline)
 
-		embedded_svc.settings.loadingText = 'Chargement en cours...'; //(Defaults to Loading)
-		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+		embedded_svc.settings.loadingText = "Chargement en cours..."; //(Defaults to Loading)
+		//embedded_svc.settings.storageDomain = "yourdomain.com"; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
 		//zSettings for Chat
 		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
@@ -33,109 +33,109 @@
 			// Returns a valid button ID.
 		//};
 		embedded_svc.settings.prepopulatedPrechatFields = {
-			FirstName: '',
-			LastName: '',
-			Subject: '',
-			Email: ''
+			FirstName: "",
+			LastName: "",
+			Subject: "",
+			Email: ""
 		};
 		
 		embedded_svc.settings.extraPrechatFormDetails = [
 	   {
-		  'label': 'ContactPrechatHID',
-      'value': '3485692',
-		  'displayToAgent': false
+		  "label": "ContactPrechatHID",
+      "value": "3485692",
+		  "displayToAgent": false
 		},{
-		  'label': 'CasePrechatHID',
-      'value': '3485692',
-		  'displayToAgent': false
+		  "label": "CasePrechatHID",
+      "value": "3485692",
+		  "displayToAgent": false
 		},{
-		  'label': 'CaseOrigin',
-		  'value': 'Chat',
-		  'displayToAgent': false
+		  "label": "CaseOrigin",
+		  "value": "Chat",
+		  "displayToAgent": false
 		},{
-		  'label': 'CaseSuppliedName',
-		  'value': '',
-		  'displayToAgent': false
+		  "label": "CaseSuppliedName",
+		  "value": "",
+		  "displayToAgent": false
 		}];
 
 		embedded_svc.settings.extraPrechatInfo = [{
-		  'entityFieldMaps': [{
-		    'doCreate': true,
-		    'doFind': false,
-		    'fieldName': 'PreChat_HID__c',
-		    'isExactMatch': false,
-		    'label': 'CasePrechatHID'
+		  "entityFieldMaps": [{
+		    "doCreate": true,
+		    "doFind": false,
+		    "fieldName": "PreChat_HID__c",
+		    "isExactMatch": false,
+		    "label": "CasePrechatHID"
 		  },
 				     {
-		    'doCreate': true,
-		    'doFind': false,
-		    'fieldName': 'Origin',
-		    'isExactMatch': false,
-		    'label': 'CaseOrigin'
+		    "doCreate": true,
+		    "doFind": false,
+		    "fieldName": "Origin",
+		    "isExactMatch": false,
+		    "label": "CaseOrigin"
 		  },
 				     {
-		    'doCreate': true,
-		    'doFind': false,
-		    'fieldName': 'SuppliedEmail',
-		    'isExactMatch': false,
-		    'label': 'Email'
+		    "doCreate": true,
+		    "doFind": false,
+		    "fieldName": "SuppliedEmail",
+		    "isExactMatch": false,
+		    "label": "Email"
 		  },{
-		    'doCreate': true,
-		    'doFind': false,
-		    'fieldName': 'SuppliedName',
-		    'isExactMatch': false,
-		    'label': 'FirstName'
+		    "doCreate": true,
+		    "doFind": false,
+		    "fieldName": "SuppliedName",
+		    "isExactMatch": false,
+		    "label": "FirstName"
 		  }],
-		  'entityName': 'Case',
-		  'saveToTranscript': 'CaseId'		
+		  "entityName": "Case",
+		  "saveToTranscript": "CaseId"		
 			
 		},{
-		  'entityFieldMaps': [{
-		     'doCreate':true,
-		     'doFind':false,
-		     'fieldName':'Email',
-		     'isExactMatch':false,
-		     'label':'Email'
+		  "entityFieldMaps": [{
+		     "doCreate":true,
+		     "doFind":false,
+		     "fieldName":"Email",
+		     "isExactMatch":false,
+		     "label":"Email"
 		},
 		{ 
-		     'doCreate':true,
-		     'doFind':false,
-		     'fieldName':'FirstName',
-		     'isExactMatch':false,
-		     'label':'FirstName'
+		     "doCreate":true,
+		     "doFind":false,
+		     "fieldName":"FirstName",
+		     "isExactMatch":false,
+		     "label":"FirstName"
 		},
-	      	{ 'doCreate':true,
-		     'doFind':false,
-		     'fieldName':'LastName',
-		     'isExactMatch':false,
-		     'label':'LastName'}],
-		  'entityName': 'Contact',
-		'linkToEntityName': 'Case',
-  		'linkToEntityField': 'ContactId',
-  		'saveToTranscript': 'ContactId',
+	      	{ "doCreate":true,
+		     "doFind":false,
+		     "fieldName":"LastName",
+		     "isExactMatch":false,
+		     "label":"LastName"}],
+		  "entityName": "Contact",
+		"linkToEntityName": "Case",
+  		"linkToEntityField": "ContactId",
+  		"saveToTranscript": "ContactId"
 		}
 	 	];
 
 		
 		
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-		//embedded_svc.settings.offlineSupportMinimizedText = ''; //(Defaults to Contact Us)
+		//embedded_svc.settings.offlineSupportMinimizedText = ""; //(Defaults to Contact Us)
 
-		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-		embedded_svc.settings.entryFeature = 'LiveAgent';
+		embedded_svc.settings.enabledFeatures = ["LiveAgent"];
+		embedded_svc.settings.entryFeature = "LiveAgent";
 
 		embedded_svc.init(
-			'https://fastmag-france--uat.my.salesforce.com',
-			'https://uat-fastmag.cs174.force.com',
+			"https://fastmag-france--uat.my.salesforce.com",
+			"https://uat-fastmag.cs174.force.com",
 			gslbBaseURL,
-			'00D7Z000000AEJ0',
-			'Chat',
+			"00D7Z000000AEJ0",
+			"Chat",
 			{
-				baseLiveAgentContentURL: 'https://c.la3-c1cs-cdg.salesforceliveagent.com/content',
-				deploymentId: '5727Z000000GmbM',
-				buttonId: '5737Z000000Gmb7',
-				baseLiveAgentURL: 'https://d.la3-c1cs-cdg.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Chat',
+				baseLiveAgentContentURL: "https://c.la3-c1cs-cdg.salesforceliveagent.com/content",
+				deploymentId: "5727Z000000GmbM",
+				buttonId: "5737Z000000Gmb7",
+				baseLiveAgentURL: "https://d.la3-c1cs-cdg.salesforceliveagent.com/chat",
+				eswLiveAgentDevName: "Chat",
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -143,14 +143,14 @@
 	};
 
 	if (!window.embedded_svc) {
-		var s = document.createElement('script');
-		s.setAttribute('src', 'https://fastmag-france--uat.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		var s = document.createElement("script");
+		s.setAttribute("src", "https://fastmag-france--uat.my.salesforce.com/embeddedservice/5.0/esw.min.js");
 		s.onload = function() {
 			initESW(null);
 		};
 		document.body.appendChild(s);
 	} else {
-		initESW('https://service.force.com' );
+		initESW("https://service.force.com" );
 	}
 	
 </script>
