@@ -36,7 +36,7 @@
 </style>
 <script type="text/javascript">
 window.onload = function exampleFunction() {
-  console.log('test 7'); // Function to be executed
+  console.log('test 9'); // Function to be executed
 }
 function sendData(param)
 {
@@ -44,8 +44,8 @@ function sendData(param)
 	console.log(form);
 	var formData = new FormData(form); // Formulaire vide à cet instant
 	
-	formData.append("email", "test");
-	document.body.innerHTML +=form;
+	document.getElementById('email').value=param;
+	//formData.append("email", "quentin.tonnerre@gmail.com");
 	form.submit();
 		
 }
@@ -53,8 +53,9 @@ function sendData(param)
 <form action="http://ar.atelier-romeo.com/l/305851/2021-06-28/ym1t9" id="form" enctype="" method="POST" >
 	<div class="row">
 	  <div class="column">
-		<img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" onclick='sendData("test");'>
-		<img src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png">
+	  <input style="display:none" type='text' id='email' name='email' value='quentin.tonnerre@gmail.com'/>
+		<img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png" onclick='sendData("quentin.tonnerre@gmail.com");'>
+		<img src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" onclick='sendData("quentin@dg4sales.com");'>
 		<img src="https://homepages.cae.wisc.edu/~ece533/images/baboon.png">
 		<img src="https://homepages.cae.wisc.edu/~ece533/images/airplane.png">
 		<img src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png">
