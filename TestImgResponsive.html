@@ -36,18 +36,17 @@
 </style>
 <script type="text/javascript">
 window.onload = function exampleFunction() {
-  console.log('test 4'); // Function to be executed
+  console.log('test 6'); // Function to be executed
 }
 function sendData(param)
 {
 	var form =document.getElementById('form');
 	console.log(form);
 	var formData = new FormData(form); // Formulaire vide à cet instant
-	//form.submit();
-	var request = new XMLHttpRequest();
-	request.open("POST", "http://ar.atelier-romeo.com/l/305851/2021-06-28/ym1t9");
+	
 	formData.append("email", "test");
-	request.send(formData);
+	document.body.innerHTML +=form;
+	form.submit();
 		
 }
 </script>
