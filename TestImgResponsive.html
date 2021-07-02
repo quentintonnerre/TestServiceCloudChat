@@ -37,20 +37,12 @@
 <script type="text/javascript">
 function sendData(param)
 {
-	/*var form =document.getElementById('form');
+	var form =document.getElementById('form');
 	console.log(form);
 	var formData = new FormData(form); // Formulaire vide à cet instant
-	formData.append('email', 'test');*/
-	//form.submit();
-	var formData = new FormData();
-
+	formData.append('email', 'test');
+	form.submit();
 	
-
-	formData.append("email", "test");
-
-	var request = new XMLHttpRequest();
-	request.open("POST", "http://ar.atelier-romeo.com/l/305851/2021-06-28/ym1t9");
-	request.send(formData);
 }
 </script>
 <form action="http://ar.atelier-romeo.com/l/305851/2021-06-28/ym1t9" id="form" method="POST" >
