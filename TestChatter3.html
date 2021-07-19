@@ -17,7 +17,7 @@
 <script type="text/javascript" src="https://service.force.com/embeddedservice/5.0/esw.min.js"></script>
 <script type="text/javascript">
 	var initESW = function(gslbBaseURL) {
-		console.log("ok49");
+		console.log("ok50");
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		//embedded_svc.settings.language = "fr"; //For example, enter "en" or "en-US"
 		embedded_svc.settings.language =  'en-US';
@@ -53,7 +53,7 @@
 		  "value": "Chat",
 		  "displayToAgent": false
 		},{
-			"label":"Status",
+			"label":"CaseStatus",
 			"value":"Nouveau",
 			"displayToAgent":false
 		},{
@@ -76,6 +76,13 @@
 		    "fieldName": "Origin",
 		    "isExactMatch": false,
 		    "label": "CaseOrigin"
+		  },
+				      {
+		    "doCreate": true,
+		    "doFind": false,
+		    "fieldName": "Status",
+		    "isExactMatch": false,
+		    "label": "CaseStatus"
 		  }],
 		  "entityName": "Case",
 		  "saveToTranscript": "CaseId"		
